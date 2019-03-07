@@ -1,81 +1,134 @@
 <!DOCTYPE html>
 <head>
-    <title>About Me</title>
+    <title>Bootstrap Portfolio</title>
+
+    <!-- Meta tags that Bootstrap recommends -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Link to own stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <div class="navigation">
-
-        <ul>
-            <li><a href="index.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <h1 id="nameheader">Elizabeth Wehner</h1>
+            
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+     </nav>
 
-        <h1>Elizabeth Wehner</h1>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/pika.png">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://eawehner.github.io/WordGuessGame/">PokeHangman</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/crystal.jpg">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://eawehner.github.io/unit-4-game/">Crystal Clicker</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/bob.png">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://eawehner.github.io/TriviaGame/">Trivia Game</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+    
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/sailormoon.jpg">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://eawehner.github.io/GiphyProject/">Anime on Giphy</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/rock.jpg">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://eawehner.github.io/RPS-Multiplayer/">Rock Paper Scissors</a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/vs.png">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://stellalana.github.io/Group-API-Project/">Marvel Vs. Pokemon</a></p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+        <div class="row">
+    
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/liri.png">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://github.com/eawehner/liri-node-app">LIRI</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/bamazon.png">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://github.com/eawehner/bamazon">BAMazon</a></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-sm-4">
+                <div class="card" style="width: 150px">
+                    <img class="card-img-top" src="assets/images/burger.jpeg">
+                    <div class="card-img-overlay">
+                        <p class="card-text"><a href="https://github.com/eawehner/burger">Burger</a></p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
 
     </div>
 
-    <div class="content">
 
-        <h2>Portfolio</h2>
-
-        <hr>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/pika.png"></div>
-
-            <div class="portfoliotext"><a href="https://eawehner.github.io/WordGuessGame/">Hangman</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/crystal.jpg"></div>
-
-            <div class="portfoliotext"><a href="https://eawehner.github.io/unit-4-game/">Crystal Clicker</a></div>
-        </div>
-        
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/bob.png"></div>
-
-            <div class="portfoliotext"><a href="https://eawehner.github.io/TriviaGame/">Trivia Game</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/sailormoon.jpg"></div>
-
-            <div class="portfoliotext"><a href="https://eawehner.github.io/GiphyProject/">Anime on Giphy</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/rock.jpg"></div>
-
-            <div class="portfoliotext"><a href="https://eawehner.github.io/RPS-Multiplayer/">Rock Paper Scissors</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/vs.png"></div>
-
-            <div class="portfoliotext"><a href="https://stellalana.github.io/Group-API-Project/">Group Project!: Marvel Vs. Pokemon</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/150x150.png"></div>
-
-            <div class="portfoliotext"><a href="https://github.com/eawehner/liri-node-app">LIRI Node App</a></div>
-        </div>
-
-        <div class="placeholder">
-            <div class="placeholderimg"><img src="assets/images/150x150.png"></div>
-
-            <div class="portfoliotext"><a href="https://github.com/eawehner/bamazon">BAMazon</a></div>
-        </div>
-
-    </div>
-
-    <div class="footer">
+    <!-- Fixed Footer -->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
         copyright
-    </div>
+    </nav>
 
 </body>
 </html>
