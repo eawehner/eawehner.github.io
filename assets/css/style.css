@@ -33,6 +33,10 @@ a {
   color: #777777;
 }
 
+div.main, div.second, div.image, div.circle, div.blurb {
+  box-shadow: -5px 10px 5px 0px #000000;
+}
+
 .main {
   position: relative;
   top: 100px;
