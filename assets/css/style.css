@@ -1,65 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    background: url("../images/gravel.png");
-    color: #777777;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  /* font-family: helvetica, arial, sans-serif;*/
+  font-family: 'Abel', sans-serif;
+  margin: 25px;
+  background: url("../images/lunaBG.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
+  /*webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
 }
 
 h1 {
-    color: #ffffff;
-    background-color: #4aaaa5;
-    margin: 0px;
-    padding: 5px;
+  font-weight: bold;
+  font-size: 2em;
 }
 
-#nameheader {
-    margin-left: 10%;
+.bold {
+  font-weight: bold;
 }
 
-h2 {
-    color: #4aaaa5;
+p {
+  max-width: 600px;
 }
 
-.container {
-    background-color: #ffffff;
-    margin-top: 15px;
-    padding: 10px;
+a {
+  text-decoration: none;
+  color: #777777;
 }
 
-/* I noticed that Google inspect merged all the classes together so this seems to be a way to apply changes to one highly specific element with all classes while not affecting other elements that share one or more of the same classes */
-nav.navbar.navbar-light.bg-light {
-    background-color: #ffffff;
-    padding: 0px;
-    border-bottom: solid 3px #cccccc;
+div.main, div.second, div.image, div.circle, div.blurb {
+  box-shadow: -5px 10px 5px 0px #000000;
 }
 
-.nav-link {
-    color: #000000 !important;
+.main {
+  position: relative;
+  top: 100px;
+  background-color: #FFFFFF;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border: solid 6px #FFFFFF;
 }
 
-.btn.btn-primary {
-    background-color: #4aaaa5 !important;
-    border-color: #4aaaa5 !important;
+.second {
+  position: relative;
+  top: 200px;
+  background-color: #FFFFFF;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border: solid 6px #FFFFFF;
 }
 
-.card {
-    margin: auto;
-    margin-top: 10px;
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
 }
 
-.card-img-overlay {
-    color: #ffffff !important;
-    background-color: #4aaaa5;
-    opacity: 0.8;
-    text-align: center;
-    height: 70px;
-    top: 80px !important;
+.portfolio {
+  position: relative;
+  top: 200px;
 }
 
-.card-text a {
-    color: #dddddd;
+.stuff {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  max-width: 800px;
+  display: flex;
+  align-items: flex-start;
 }
 
-.card-text a:hover {
-    color: #ffffff;
-    text-decoration: none;
+.image {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  border: solid 6px #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+
+.eye {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.eye > a {
+  height: 100%;
+  /*margin: auto;
+  display: table-cell;
+  vertical-align: middle;*/
+}
+
+.circle {
+  height: 100%;
+}
+
+.blurb {
+  padding: 7px;
+  width: 300px;
+  height: auto;
+  margin-left: 15px;
+  background-color: #FFFFFF;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox > img {
+	/** Pad the lightbox image */
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 5%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+	outline: none;
+
+	/** Unhide lightbox **/
+	display: block;
 }
